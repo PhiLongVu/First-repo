@@ -1,0 +1,44 @@
+*{
+    /*calculate the width and factoring the padding*/
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+header{
+    background-color:  grey;
+    text-align: center;
+    padding: 25px;
+}
+.navbar{
+    background-color: blueviolet;
+    height: 50px;
+}
+aside{
+    width:20%;
+    float: left;
+    padding: 10px;
+}
+section{
+    width: 40%;
+    float:left;
+    padding: 10px;
+}
+article{
+    width: 40%;
+    float: left;
+    padding: 10px;
+}
+footer{
+    display: block;
+    text-align: center;
+    clear: both; /*clear float*/
+    background-color: greenyellow;
+    padding: 25px;
+}
+/*if width of screen is below 600px, change properties*/
+@media screen and (max-width:600px){
+    aside, section, article{
+        width:100%;
+    }
+}

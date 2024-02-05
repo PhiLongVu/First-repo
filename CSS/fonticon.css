@@ -1,0 +1,30 @@
+.icon {
+    text-align: center;
+}
+
+.icon a{
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.fa-solid.fa-house.fa-sm{
+    color: grey;
+}
+
+.fa-solid.fa-house.fa-sm:hover{
+    color: black;
+    size: 2em;
+}
+
+
+.fa-brands.fa-twitter.fa-sm{
+    color:rgb(7, 143, 255);
+}
+
+.fa-brands.fa-youtube.fa-sm{
+    color:rgb(255, 23, 7);
+}
+
+.fa-brands.fa-twitter.fa-sm{
+    color:rgb(7, 143, 255);
+}

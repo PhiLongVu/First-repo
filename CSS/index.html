@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="box"></div>
+    <!-- headers-->
+    <header style = "background-color: aqua;">
+        <h1> WELCOME TO MY WEB</h1>
+        <a href="">Home</a>
+        <a href="">About us</a>
+        <a href="">Product</a>
+        <a href="">Contact us</a>
+    </header>
+    <main>
+    <!--HEADINGS-->
+    <h1> h1 heading </h1>
+    <h2> h2 heading </h2>
+    <h3>  h3 heading </h3>
+    <h4> h4 heading </h4>
+    <h5> h5 heading </h5>
+    <h6> h6</h6>
+    <hr> 
+    <br>
+    <p> 
+        line break: br; another pr
+        <br>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nobis culpa distinctio reprehenderit aspernatur, aperiam saepe placeat a rem eum quibusdam nulla blanditiis facere pariatur doloremque non atque ab voluptates.
+    </p>
+
+    <pre> 
+        line break: br; another pr
+        
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum nobis culpa distinctio reprehenderit aspernatur, aperiam saepe placeat a rem eum quibusdam nulla blanditiis facere pariatur doloremque non atque ab voluptates.
+    </pre>
+
+    <!--this si a comment
+    target blank creates new tab or window-->
+    <a href = "https://www.google.com/"
+    target="_blank"
+    title="Goees to google">
+    click me 
+    </a>
+
+    <a href="lyrics.html"
+    >
+    song lyrics
+    </a>
+    <a href = "mailto:mail@gmail.com">
+        email me
+    </a>
+    <!--Image-->
+    <h1> This is a cute dog</h1>
+    <a href = "https://www.google.com/">
+    <img src = "images/golder-retriever-puppy.png"
+    alt = "This is a picture of a dog"
+    height = "200">
+</a>
+    <img src = "images/96cd7e329caf7040d9f6ddfea710ebcd.gif"> 
+    <h3> woof woof </h3>
+    <!-- lists can be nested too-->
+    <!-- unordered list-->
+    <ul> 
+        <li>milk</li>
+        <li>egg</li>
+        <li>bread</li>
+        </ul>
+    <!-- ordered list-->
+    <ol>
+        <li>walk</li>
+        <li>run</li>
+    
+    </ol>
+    <dl style = "background-color:aquamarine; border: 2px solid">
+        <dt>dragon</dt>
+        <dd>a mythic creature</dd>
+        <dt>chicken</dt>
+        <dd> animal</dd>
+    </dl>
+
+    <!--tables-->
+    <!--tables rows-->
+<table border = "2" style = "background-color: blue">    
+    <tr align = "center" style = "background-color:azure">
+        <!-- table headers-->
+        <th width = 1000> sun</th>
+        <th> mon</th>
+        <th> tues</th>
+    </tr>
+    <tr align = "center">
+        <!-- table headers-->
+        <th> closed</th>
+        <th> open</th>
+        <th> no</th>
+        <th>what</th>
+    </tr>
+</table>
+<!-- button -->
+<a href = "https://www.google.com">
+<button style = "font-size: 25px; background-color:beige; border-radius: 50px;"> click mememememee</button>
+</a>
+
+<a href = "lyrics.html">
+    <button onclick = "doSomething()" style = "font-size: 25px; background-color:beige; border-radius: 50px;"> click mememememee</button>
+    </a>
+
+    <button onclick = "doSomething()"> click me for omg</button>
+<p id = "Greetings"> hello </p>
+<!-- click button to turn to OMGG-->
+<script>
+    
+    function doSomething(){
+        document.getElementById("Greetings").innerHTML = "OMGGGG";
+    }
+</script>
+<!--action->sends data to backend file in php for example-->
+<!-- POST - sensitive data like password; GET - not sensitive data-->
+<form action="index.php" method = "POST" enctype="multipart/form-data">
+    <!-- multiple parts of file (image for ex) and will be assembled later-->
+    <label for="username"> username:</label>
+    <input type = "text" id = "username" placeholder="sponspob" minlength = "6" maxlength = "15" required> <br>
+
+    
+    <label for="password"> password:</label>
+    <input type = "password" required> <br>
+
+    <label for="email"> email:</label>
+    <input type = "email" id = "email" placeholder="abc@gmail.com" required> <br>
+
+    <label for="phone"> email:</label>
+    <input type = "tel" id = "phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"> <br>
+    <!--[0-9]{3}-[0-9]{3}-[0-9]{4} -> 3 digits 3 digits 4 digits-->
+
+    <label for="bday"> email:</label>
+    <input type = "date" id = "bday" placeholder="1/1/2000" required> <br>
+
+    
+    <label for="quantity"> email:</label>
+    <input type = "number" id = "quantity" min = "0" max = "99" value="1" required> <br>
+    <!--value is the first digit to appear--> 
+
+    <!--multiselect radio buttons-->
+    <label for = "Mr."> Mr.</label>
+    <input type = "radio" id = "Mr." value = "Mr.">
+
+    <label for = "Ms."> Ms.</label>
+    <input type = "radio" id = "Ms." value = "Ms.">
+
+    <label for = "phd"> phd.</label>
+    <input type = "radio" id = "phd" value = "phd"> <br>
+
+        <!--single select radio buttons-->
+        <label for = "title">title:</label>
+
+        <label for = "Mr."> Mr.</label>
+        <input type = "radio" id = "Mr." value = "Mr." name = "title">
+    
+        <label for = "Ms."> Ms.</label>
+        <input type = "radio" id = "Ms." value = "Ms." name = "title">
+    
+        <label for = "phd"> phd.</label>
+        <input type = "radio" id = "phd" value = "phd" name = "title">
+
+    
+        <!--selection box-->
+    <label for="payment">payment</label>
+    <select>
+        <option value = "visa"> visa</option>
+        <option value="mastercard"> mastercard</option>
+        <option value = "checkbox"> checkbox </option>
+    </select> <br>
+
+    <!-- checkbox-->
+    <label for = "sub"> subscribe:</label>
+    <input type = "checkbox" id = "sub"> <br>
+
+    <label for="comment"> comment:</label>
+    <textarea id = "comment" row="3" cols = "25"></textarea>
+    
+
+    <!-- file form -->
+    <label for = "file"> file:</label>
+    <!--default: all files-->
+    <input type = "file" id="file">
+    <input type = "file" id="file" accept = "image/png">
+    <input type = "file" id="file" accept = "image/png, image/jpeg">
+
+
+
+    
+
+    <input type ="submit"> <br>
+    <input type = "reset">
+</form>
+</main>
+<footer style="background-color: aqua;">
+    <hr>
+    author: Bro code <br>
+    &copy:copyright reserved<br>
+    <a href="dwajdnadjwnadandand">lodladlwadlad</a>
+</footer>
+
+<!--css: inline (inside the <>); internal (inside the file); external (create a css sheet file)-->
+<p class = "testborder">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quam, rerum quaerat aperiam sed laboriosam explicabo quas praesentium voluptas, atque aut commodi perferendis? Dicta vel assumenda repellat nihil nisi maiores.</p>
+<p class = "testborder">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quam, rerum quaerat aperiam sed laboriosam explicabo quas praesentium voluptas, atque aut commodi perferendis? Dicta vel assumenda repellat nihil nisi maiores.</p>
+<p class = "nah">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quam, rerum quaerat aperiam sed laboriosam explicabo quas praesentium voluptas, atque aut commodi perferendis? Dicta vel assumenda repellat nihil nisi maiores.</p>
+<p class = "testborder">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quam, rerum quaerat aperiam sed laboriosam explicabo quas praesentium voluptas, atque aut commodi perferendis? Dicta vel assumenda repellat nihil nisi maiores.</p>
+<p id = "parend" class = "lol">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, quam, rerum quaerat aperiam sed laboriosam explicabo quas praesentium voluptas, atque aut commodi perferendis? Dicta vel assumenda repellat nihil nisi maiores.</p>
+
+
+<!--font-->
+    <p id="fonttest">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste voluptatem quas perspiciatis incidunt, exercitationem, animi fugit, quam praesentium esse sint eius soluta distinctio obcaecati. Rem praesentium officia nesciunt consequuntur expedita!</p>
+
+<!--margin-->
+
+<div class = "boxmargin" id = "box2margin"> box2margin </div>
+<div class = "boxmargin" id = "box3margin"> box3margin </div>
+
+<!--float-->
+<br>
+<div id="floattest">
+<img src="images/pokeball.png" height = 200px id = "pokeball">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure excepturi amet optio neque asperiores esse explicabo, illum atque quisquam magni aut libero quam facilis sed! Qui error facere fuga quam.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eos aut dolorum saepe distinctio fuga necessitatibus dolore! Itaque magni quas repellat expedita nemo aperiam facere libero, deserunt sapiente saepe distinctio!</p>
+
+<img src="images/pikachu.jpg" height = 100px id = "pikachu">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure excepturi amet optio neque asperiores esse explicabo, illum atque quisquam magni aut libero quam facilis sed! Qui error facere fuga quam.</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eos aut dolorum saepe distinctio fuga necessitatibus dolore! Itaque magni quas repellat expedita nemo aperiam facere libero, deserunt sapiente saepe distinctio!</p>
+</div>
+
+<br>
+<div id="overflow">
+    <p id="overflow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero fugiat vitae numquam aliquid tempora accusantium! Maxime, inventore! Dolores ea facilis ab, amet corrupti aspernatur aut magni, rerum cumque excepturi dicta.</p>
+</div>
+
+<br>
+
+<div id="heightwidth">
+    <h2>This is #1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, eos harum dignissimos deserunt neque tempore placeat necessitatibus magni iste magnam atque illo tempora consequuntur delectus voluptate beatae explicabo minima expedita?</p>
+
+</div>
+
+<div id = "heightwidth2">
+    <h2>This is #2</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis eligendi cum rem dolore officia vitae sunt architecto! Facilis, magnam. Repellat libero impedit praesentium iste maiores! Reiciendis soluta rerum odit alias!</p>
+
+</div>
+
+<!--combinators
+  empty = descendants
+  > = child
+  ~ all siblings
+  + next sibling
+
+
+
+-->
+
+<br>
+<div>
+<div id="combinator1">
+    <p>This is 1</p>
+    <p>This is 2</p>
+    <div><p>This is 3</p></div>
+    
+</div>
+<p>This is 4</p>
+<p>This is 5</p>
+<br>
+<div id="combinator2">
+    <p>This is 1</p>
+    <p>This is 2</p>
+    <div><p>This is 3</p></div>
+</div>
+<p>This is 4</p>
+<p>This is 5</p>
+<br>
+<div id="combinator3">
+    <p>This is 1</p>
+    <p>This is 2</p>
+    <div><p>This is 3</p></div>
+</div>
+<p>This is 4</p>
+<p>This is 5</p>
+<br>
+<div id="combinator4">
+    <p>This is 1</p>
+    <p>This is 2</p>
+    <div><p>This is 3</p></div>
+</div>
+<p>This is 4</p>
+<p>This is 5</p>
+</div>
+
+<!--pseudo class-->
+<br>
+<button>click me</button>
+<br>
+<a href="https://www.google.com" id="linktest"> Google </a>
+<br>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+<br>
+<div id="greeting">Hover here
+<p> HEllo</p>
+</div>
+<br>
+<h1 id="h1">Hello</h1>
+<p id = "loltest">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quae repellendus porro perspiciatis obcaecati, eius debitis aliquam in eligendi minima, beatae maxime itaque sed odio! Tenetur nisi libero commodi quae.</p>
+<br>
+<ul id = "number">
+    <li id="number1">1</li>
+    <li id = "number2">2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+</body>
+</html>
